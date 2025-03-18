@@ -1,5 +1,5 @@
 {
-    "name": "psr/http-server-handler",
+    "name": "lwd/http-server-handler",
     "description": "Common interface for HTTP server-side request handler",
     "keywords": [
         "psr",
@@ -22,13 +22,19 @@
     "support": {
         "source": "https://github.com/php-fig/http-server-handler"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/johnathanlouie/http-message"
+        }
+    ],
     "require": {
-        "php": ">=7.0",
-        "psr/http-message": "^1.0 || ^2.0"
+        "php": "^5.5",
+        "lwd/http-message": "^1.0 || ^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Psr\\Http\\Server\\": "src/"
+            "Lwd\\Http\\Server\\": "src/"
         }
     },
     "extra": {
